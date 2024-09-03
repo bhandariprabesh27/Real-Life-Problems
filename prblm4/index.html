@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Tooltip</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <div
+      class="w-full min-h-[200vh] bg-zinc-900 text-white p-20 font-['montserrat']"
+    >
+      <div class="relative w-fit">
+        <button
+          id="btn"
+          class="bg-red-600 px-8 py-2 rounded-md font-semibold text-sm mb-10"
+        >
+          Custom Tooltip
+        </button>
+        <div
+          class="tooltip hidden w-full absolute z-[2] -translate-y-full -top-1 left-0 bg-green-500 p-1 px-3 rounded-sm font-semibold text-xs"
+        >
+          Hello
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
